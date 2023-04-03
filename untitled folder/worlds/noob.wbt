@@ -1,0 +1,75 @@
+#VRML_SIM R2023a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/appearances/protos/VarnishedPine.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation 0.2907756020590571 0.2752999332126774 -0.9163293600121564 1.712381166973893
+  position 0.020319793354096102 1.6787066790092118 0.9508102054930968
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+}
+Solid {
+  translation -0.36 -0.32 0.05
+  children [
+    Transform {
+      children [
+        Shape {
+          appearance VarnishedPine {
+          }
+          geometry Box {
+            size 0.1 0.1 0.1
+          }
+        }
+      ]
+    }
+  ]
+  physics Physics {
+  }
+}
+Solid {
+  translation -0.35 0.17 0.05
+  children [
+    Transform {
+      children [
+        Shape {
+          appearance VarnishedPine {
+          }
+          geometry Box {
+            size 0.1 0.1 0.1
+          }
+        }
+      ]
+    }
+  ]
+  name "solid(1)"
+  physics Physics {
+  }
+}
+Solid {
+  translation 0.12 -0.32 0.05
+  children [
+    Transform {
+      children [
+        Shape {
+          appearance VarnishedPine {
+          }
+          geometry Box {
+            size 0.1 0.1 0.1
+          }
+        }
+      ]
+    }
+  ]
+  name "solid(2)"
+  physics Physics {
+  }
+}
